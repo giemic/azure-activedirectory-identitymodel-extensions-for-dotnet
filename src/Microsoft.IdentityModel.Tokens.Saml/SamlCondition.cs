@@ -25,18 +25,12 @@
 //
 //------------------------------------------------------------------------------
 
-using System.Collections.Generic;
-
-namespace System.IdentityModel.Tokens.Saml
+namespace Microsoft.IdentityModel.Tokens.Saml
 {
     /// <summary>
-    /// Initializes a new instance of <see cref="SamlAudienceRestrictionCondition"/> which contains Audiences. 
+    /// Initializes a new instance of <see cref="SamlCondition"/>. 
     /// </summary>
-    public class SamlAudienceRestrictionCondition : SamlCondition
+    public class SamlCondition
     {
-        /// <summary>
-        /// Gets or sets the list of Audiences.
-        /// </summary>
-        public IList<Uri> Audiences { get; set; }
     }
 }

@@ -5,16 +5,11 @@
     "Microsoft.IdentityModel.Tokens": "5.1.4"
   },
   "frameworks": {
-    "netstandard1.4": {
-      "dependencies": {
-        "System.Runtime.Serialization.Primitives": "4.3.0-*",
-        "System.Runtime.Serialization.Xml": "4.3.0-*"
-      }
-    },
     "net451": {
-      "frameworkAssemblies": {
-        "System.Runtime.Serialization": ""
-      }
+        "frameworkAssemblies": {
+            "System.IdentityModel": "",
+            "System.Runtime.Serialization": ""
+        }
     }
   },
   "buildOptions": {

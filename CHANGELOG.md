@@ -3,8 +3,15 @@
 
 ## Features
 * **JWE Support:** AES and RSA key wrap support
-* Fix for breaking change introduced in 5.1.0
+** RSA1_5
+** RSA-OEAP
+** A128KW
+** A256KW
 
+* Issues addressed
+https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/issues?q=is%3Aissue+milestone%3A5.1.3+is%3Aclosed
+
+* Fix for breaking change introduced in 5.1.0
 # 5.1.2
 
 ## Features

@@ -26,18 +26,18 @@
 //------------------------------------------------------------------------------
 
 using System;
-using System.Reflection;
-using System.Runtime.InteropServices;
+using System.Collections.Generic;
 
-[assembly: AssemblyTitle("System.IdentityModel.Tokens.Saml")]
-[assembly: AssemblyDescription("Support for Saml1 and Saml2 SecurityTokens.")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCopyright("Copyright (c) Microsoft Corporation. All rights reserved.")]
-[assembly: AssemblyCulture("")]
-[assembly: AssemblyProduct("System.IdentityModel.Tokens.Saml")]
-[assembly: AssemblyTrademark("")]
-[assembly: ComVisible(false)]
-[assembly: CLSCompliant(true)]
-[assembly: Guid("63F6E63C-300D-4D4F-9364-0087E4F18477")]
-[assembly: AssemblyMetadata("Serviceable", "True")]
-[assembly: AssemblyVersion("5.1.4")]
+namespace Microsoft.IdentityModel.Tokens.Saml
+{
+    /// <summary>
+    /// Initializes a new instance of <see cref="SamlAudienceRestrictionCondition"/> which contains Audiences. 
+    /// </summary>
+    public class SamlAudienceRestrictionCondition : SamlCondition
+    {
+        /// <summary>
+        /// Gets or sets the list of Audiences.
+        /// </summary>
+        public IList<Uri> Audiences { get; set; }
+    }
+}

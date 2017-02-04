@@ -8,15 +8,6 @@
   "description": "Microsoft.IdentityModel.Protocols.WsFederation.Tests",
   "testRunner": "xunit",
   "frameworks": {
-    "netcoreapp1.0": {
-      "dependencies": {
-        "Microsoft.NETCore.App": {
-          "version": "1.0.0-*",
-          "type": "platform"
-        },
-        "System.Diagnostics.Process": "4.3.0-*"
-      }
-    },
     "net451": {
       "frameworkAssemblies": {
         "System.Runtime": "",
@@ -28,7 +19,6 @@
     }
   },
   "buildOptions": {
-    "warningsAsErrors": true,
-    "compile": { "exclude": [ "WsFederationMessageTests.cs" ] }
+    "warningsAsErrors": true
   }
 }
